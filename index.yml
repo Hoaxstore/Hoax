@@ -1,115 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Files | Hoax Store</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoax Store</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f6f8;
+      background: #f5f5f5;
     }
-
     header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
       background: #111;
       color: white;
-      padding: 15px 20px;
-      font-size: 22px;
+    }
+    .logo {
+      font-size: 24px;
       font-weight: bold;
+      margin-right: 40px;
     }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-
-    .file-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 25px;
-    }
-
-    .file-info {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .file-icon {
-      font-size: 48px;
-    }
-
-    .file-text h2 {
-      margin: 0;
-      font-size: 20px;
-      color: #222;
-    }
-
-    .file-text p {
-      margin: 5px 0 0;
-      color: #666;
-      font-size: 14px;
-    }
-
-    .download-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: linear-gradient(135deg, #3a86ff, #0051ff);
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      transition: transform 0.2s, background 0.3s;
+      color: white;
+      font-size: 16px;
     }
-
-    .download-btn img {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: white;
-      padding: 2px;
-    }
-
-    .download-btn:hover {
-      background: linear-gradient(135deg, #0051ff, #0037b3);
-      transform: scale(1.05);
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
-
-  <header>📁 Files</header>
-
-  <div class="container">
-
-    <div class="file-card">
-      <div class="file-info">
-        <div class="file-icon">📄</div>
-        <div class="file-text">
-          <h2>The Ultimate Python Handbook</h2>
-          <p>Complete beginner to advanced Python guide (PDF)</p>
-        </div>
-      </div>
-
-      <!-- Download button with logo -->
-      <a href="The Ultimate Python Handbook.pdf" download class="download-btn">
-        <img src="python-logo.png" alt="Download Logo">
-        Download
-      </a>
-    </div>
-
-  </div>
-
+  <header>
+    <div class="logo">Hoax Store</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Apps</a>
+      <a href="#">Games</a>
+      <a href="#">Files</a>
+      <a href="#">About Us</a>
+    </nav>
+  </header>
 </body>
 </html>
